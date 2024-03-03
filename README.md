@@ -68,45 +68,21 @@ Additionally, you will need to setup index schema for Azure Cognitive Search and
 
 
 ## Installation instructions
-Follow the document present at / 
+Follow the document present at [Sitecore Demo Edge](https://github.com/Sitecore/Sitecore.Demo.Edge/tree/main) 
 
-> _A simple well-described installation process is required to win the Hackathon._  
-> Feel free to use any of the following tools/formats as part of the installation:
-> - Sitecore Package files
-> - Docker image builds
-> - Sitecore CLI
-> - msbuild
-> - npm / yarn
-> 
-> _Do not use_
-> - TDS
-> - Unicorn
- 
-for example:
-
-1. Use the Sitecore Installation wizard to install the [package](#link-to-package)
-2. ...
-3. profit
 
 ### Configuration
-⟹ If there are any custom configuration that has to be set manually then remember to add all details here.
+Need to change the Azur related configuration which mentioned in the Website\src\rendering\src\pages\copilot\index.tsx
 
-_Remove this subsection if your entry does not require any configuration that is not fully covered in the installation instructions already_
 
 ## Usage instructions
-⟹ Provide documentation about your module, how do the users use your module, where are things located, what do the icons mean, are there any secret shortcuts etc.
+1- Install the environment using provided instructions
 
-Include screenshots where necessary. You can add images to the `./images` folder and then link to them from your documentation:
+2- Replace Azure Keys and Endpoints with your own (Keys are omitted from the repo and will only be provided to the judges for evalution purposes)
 
-![Hackathon Logo](docs/images/hackathon.png?raw=true "Hackathon Logo")
+3- Chat and organize your sessions!
 
-You can embed images of different formats too:
 
-![Deal With It](docs/images/deal-with-it.gif?raw=true "Deal With It")
-
-And you can embed external images too:
-
-![Random](https://thiscatdoesnotexist.com/)
 
 ## Comments
-If you'd like to make additional comments that is important for your module entry.
+We are using free subscription so need to wait for 30 seconds for another query in the chat.
