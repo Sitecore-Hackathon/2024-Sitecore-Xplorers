@@ -1,3 +1,5 @@
+import styles from './style.module.css'
+import Image from 'next/image'
 import Head from 'next/head';
 import { ReactElement } from 'react';
 import { useState, useRef, useEffect } from 'react';
@@ -40,7 +42,7 @@ Copilot.getLayout = function getLayout(page: ReactElement) {
 
   async function main(input) {
     setIsLoading(true);
-    const azureApiKey = "xxxxxx";
+    const azureApiKey = "xxxx";
     const apiUrl = 'https://[Dynamic].openai.azure.com/openai/deployments/[Dynamic]/extensions/chat/completions?api-version=2023-07-01-preview';
     const requestBody = {
         temperature: 0,
@@ -51,7 +53,7 @@ Copilot.getLayout = function getLayout(page: ReactElement) {
                 type: 'AzureCognitiveSearch',
                 parameters: {
                     endpoint: 'https://[Dynamic].search.windows.net',
-                    key: 'xxxxx',
+                    key: 'xx',
                     indexName: 'sessions',
                 },
             },
@@ -161,24 +163,22 @@ Copilot.getLayout = function getLayout(page: ReactElement) {
       </header>
 
       <main>
-        <section className="section dynamic-welcome-message">
-          <div className="container message-banner">
-            <span>Welcome to PLAY! Summit Copilot.</span>
+        <section className="section dynamic-welcome-message" style={{ background: '#f8f9fa' }}>
+          <div className="container message-banner" style={{ paddingTop: '0', paddingBottom:'0' }}>
+            <span><h1  className={styles.color1 +" "+ styles.heading1}>Welcome to PLAY! Summit Copilot.</h1></span>
           </div>
         </section>
         <section className="section information-section">
           <div className="section-content container">
             <div className="information-grid">
               <section className="sectionSpace">
-                <div className="mainContainer">
-                  <div className="content">
+                <div className={styles.mainContainer}>
+                  <div className={styles.content}>
                     <div style={{ margin: '0 4em', marginTop: '5px' }}>
-                      <h1>Buyer Copilot</h1>
-                      <div>I'm here to help</div>
+                      <div><h3 className={styles.heading3}>I'm here to help</h3></div>
                     </div>
                     <section>
-                      {/* <div style={{ margin: "0 16em", padding: "1em 0em" }}></div> */}
-                      <div className="card" style={{ margin: '0 4em', padding: '1em 2em' }}>
+                      <div className={styles.card} style={{ margin: '0 4em', padding: '1em 2em' }}>
                         <div
                           className="chat-box"
                           style={{
@@ -192,11 +192,8 @@ Copilot.getLayout = function getLayout(page: ReactElement) {
                           {messages.map((message, index) => (
                             <div key={index}>
                               <div
-                                className={`${'card'} ${
-                                  message.user == true ? `${'userInput'}` : `${'response'}`
-                                }`}
+                                 className={`${styles.card} ${message.user == true ? `${styles.userInput}` : `${styles.response}`} ${message.error == true ? `${styles.errorMsg}` : ""}`} 
                               >
-                                {' '}
                                 <div dangerouslySetInnerHTML={{ __html: message.text }} />
                               </div>
                               <br />
@@ -231,7 +228,7 @@ Copilot.getLayout = function getLayout(page: ReactElement) {
                                 marginRight: '10px',
                               }}
                             />
-                            <button type="submit" className="custom-button primary">
+                            <button type="submit" className="custom-button primary btn-main" >
                               Send
                             </button>
                           </form>
