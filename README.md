@@ -41,6 +41,11 @@ This the overall architecture diagram of the Copilot
 
 ![Image](docs/images/image-3.png?raw=true "Architecture Logo")
 
+### Play Summit App – Chat Playground
+
+![Image](docs/images/image-5.png?raw=true "Architecture Logo")
+
+![Image](docs/images/image-4.png?raw=true "Architecture Logo")
 
 ## Video link
 [Video link => docs/ PlaySummit-Video.mp4](docs/PlaySummit-Video.mp4)
