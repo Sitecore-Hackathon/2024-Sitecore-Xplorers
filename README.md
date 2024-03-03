@@ -1,6 +1,7 @@
 
 ![Hackathon Logo](docs/images/Sitecore-hackathon-XPlorers-Sitecore-Naveed-Sitecore-Amit-1.png?raw=true "Hackathon Logo")
-# Sitecore Hackathon 2024 - Sitecore XPlorers Team
+## Team Name
+ <strong> Sitecore XPlorers </strong>
 ![Hackathon Logo](docs/images/Sitecore-hackathon-XPlorers-Sitecore-Naveed-Sitecore-Amit.png)
 
 
